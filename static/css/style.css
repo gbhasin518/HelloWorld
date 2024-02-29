@@ -1,0 +1,31 @@
+
+p{
+    color: green;
+    text-decoration: underline;
+}
+
+h2{
+    color: red;
+    font-weight: bold;
+}
+
+/*creates a border for the table to help differentiate it with other text*/
+table{
+    border: 1px solid;
+    border-color: brown;
+}
+
+/*creates a difference between the third paragraph and last paragraphs*/
+p#special{
+    color: blue;
+    font-size: 30px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+img.logo{
+    width: 267px;
+    height: 72px;
+}
