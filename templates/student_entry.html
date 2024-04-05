@@ -22,7 +22,7 @@
 
 {% block page_content %}
 <form class="row g-3"
-     action="{% if action == 'update' %}/student/update/<int:student_id>{{ student.student_id }}{% else %}/student/create{% endif %}" method="post">
+     action="{% if action == 'update' %}/student/update{{ student.student_id }}{% else %}/student/create{% endif %}" method="post">
  <div class="col-md-4">
    <label for="first_name" class="form-label"><strong>First Name</strong></label>
    {% if action and action in ['create', 'update'] %}
