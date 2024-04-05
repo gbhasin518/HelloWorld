@@ -62,7 +62,7 @@ def student_create():
     return redirect(url_for('student_view_all'))
 
 
-@app.route('/student/update', methods=['GET', 'POST'])
+@app.route('/student/update/<int:student_id>', methods=['GET', 'POST'])
 def student_edit(student_id):
     if request.method == 'GET':
         student = Student.query.filter_by(student_id=student_id).first()
